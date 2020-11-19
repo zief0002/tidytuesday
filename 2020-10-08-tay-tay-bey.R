@@ -15,7 +15,7 @@ library(extrafont)
 ######################################
 
 # Run once
-font_import()
+#font_import()
 
 # Run each session
 loadfonts(quiet = TRUE)
@@ -68,6 +68,7 @@ love = tay %>%
     title = str_to_title(title),
     Love = "Yes"
   )
+
 
 
 
