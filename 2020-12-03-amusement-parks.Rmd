@@ -1,0 +1,78 @@
+---
+title: "Amusement Park Injuries"
+author: "Andy"
+date: "11/20/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
+
+library(patchwork)
+library(tidyverse)
+library(broom)
+#library(emmeans)
+
+tx_injuries <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-09-10/tx_injuries.csv")
+
+safer_parks <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-09-10/saferparks.csv")
+
+
+```
+
+# 1. Use safer_parks to determine which location has the most injuries
+
+```{r}
+safer_parks %>%
+  group_by(acc_state) %>%
+  summarize( N = n()) %>%
+  arrange(desc(N))
+```
+
+# 2. From safer_parks, use "device_type" to determine which type of ride has the most injuries?
+
+
+```{r}
+safer_parks %>%
+  group_by(device_type) %>%
+  summarize( N = n()) %>%
+  arrange(desc(N))
+```
+
+
+# 3. From safer_parks, use "gender" to determine whether males or females are injured more often. Plot it and perform a t-test.
+
+```{r}
+safer_parks %>%
+  group_by(gender) %>%
+  summarize( N = n()) %>%
+  arrange(desc(N))
+```
+
+
+
+# 4. From safer_parks use "injury_desc" to determine which "device_type" is the deadliest
+
+```{r}
+# grep() returns the elment number where it finds a match
+grep("[Dd]ead", safer_parks$injury_desc)
+grep("[Dd]ie", safer_parks$injury_desc)
+grep("[Dd]eath", safer_parks$injury_desc)
+
+
+# str_which() is the stringr equivalent of grep()
+str_which(string = safer_parks$injury_desc, pattern = "[Dd]ead")
+str_which(string = safer_parks$injury_desc, pattern = "[Dd]ie")
+str_which(string = safer_parks$injury_desc, pattern = "[Dd]eath")
+str_which(string = safer_parks$injury_desc, pattern = "[Ll]ethal")
+
+
+# Can do them all at once...key is no spaces around the |
+croak = str_which(string = safer_parks$injury_desc, pattern = "[Dd]ead|[Dd]ie|[Dd]eath")
+
+safer_parks %>%
+  filter(row_number() %in% croak) %>%
+  group_by(device_type) %>%
+  summarize( N = n()) %>%
+  arrange(desc(N))
+```
