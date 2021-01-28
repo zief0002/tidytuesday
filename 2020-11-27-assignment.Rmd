@@ -1,0 +1,56 @@
+---
+title: "The Office"
+author: "Andy"
+date: "10/27/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# Get the Data
+office_ratings <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-03-17/office_ratings.csv')
+```
+
+# Use office_ratings to plot the IMDB ratings by Season. Plot each Season separately (hint, use facet_wrap(.~season)) with each episode plotted on its season's graph.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+office_ratings %>%
+  mutate(new_season = paste("Season", season, sep = " "))
+
+
+
+# Plot data here
+library(plotly)
+library(tidyverse)
+
+p = office_ratings %>%
+  mutate(new_season = paste("Season", season, sep = " ")) %>%
+  ggplot(aes(x = episode, y = imdb_rating)) +
+  geom_line(group = 1) +
+  geom_point() +
+  theme_light() +
+  facet_wrap(~new_season)
+
+ggplotly(p)
+```
+
+# Get average IMDB ratings for each season, including SD and SE
+
+```{r}
+# Get average per season here
+```
+
+# Plot average season ratings on one graph. Include error bars with SE. Make sure the title is centered and axes are labeled. 
+
+```{r}
+# Plot average season ratings here
+```
+
+# Run an analysis to determine if there is a main effect of season, or trend (e.g. later season get higher ratings i.e. the show gets better)
+
+```{r}
+# Run your analysis here
+```
+

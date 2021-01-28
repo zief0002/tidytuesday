@@ -1,0 +1,50 @@
+---
+title: "Cereal"
+author: "Your name here"
+date: "12/3/2020"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidytuesdayR)
+library(ggplot2)
+library(gridExtra)
+library(dplyr)
+library(tidyverse)
+library(broom)
+library(emmeans)
+
+```
+
+# 1. Read in data cereal.csv
+```{r}
+
+ 
+
+```
+
+# 2. Which cereal has the most and least surgar per serving? The most and least calories? The most and least protein? (and any other nutritional info you're interested in)
+
+
+```{r}
+
+```
+
+# 3. Which cereal is rated the highest? Is there a relationship between rating and any of the nutritional values you explored above?
+```{r}
+
+```
+
+#4. Which brand has the highest average rating? Is there a significant difference between average ratings across brands?
+```{r}
+
+```
+
+# 5. What is each brand's favourite (most common) nutritional component? e.g. does one brand tend to use more sugar? 
+```{r}
+
+```
+

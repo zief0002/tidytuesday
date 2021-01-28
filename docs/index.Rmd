@@ -1,0 +1,25 @@
+---
+title: "ICD Tidy Tuesday"
+description: |
+  Some Tidy Tuesday Fun!
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+
+```
+
+
+Here are some Tidy Tuesday activities.
+
+
+## February 01, 2021
+
+- [Activity (HTML)](worksheets/tidy-tuesday-2021-02-01.html)
+- [RMD File](worksheets/tidy-tuesday-2021-02-01.Rmd)
+
+

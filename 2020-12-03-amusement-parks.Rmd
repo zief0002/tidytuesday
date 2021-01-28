@@ -64,11 +64,11 @@ grep("[Dd]eath", safer_parks$injury_desc)
 str_which(string = safer_parks$injury_desc, pattern = "[Dd]ead")
 str_which(string = safer_parks$injury_desc, pattern = "[Dd]ie")
 str_which(string = safer_parks$injury_desc, pattern = "[Dd]eath")
-str_which(string = safer_parks$injury_desc, pattern = "[Ll]ethal")
+str_which(string = safer_parks$injury_desc, pattern = "[Ff]atal")
 
 
 # Can do them all at once...key is no spaces around the |
-croak = str_which(string = safer_parks$injury_desc, pattern = "[Dd]ead|[Dd]ie|[Dd]eath")
+croak = str_which(string = safer_parks$injury_desc, pattern = "[Dd]ead|[Dd]ie|[Dd]eath|[Ff]atal")
 
 safer_parks %>%
   filter(row_number() %in% croak) %>%
