@@ -53,7 +53,7 @@ head(gapminder)
 <br /><br />
 
 
-2. Create a scatterplot of the life expectancy versus income for the year 1982. But use emoji rather than points to mark the observations in the plot. There are several packages that you could use to do this. Here is one [example](https://www.hvitfeldt.me/blog/real-emojis-in-ggplot2/).
+2. Create a scatterplot of the life expectancy versus income for the year 1982. But use emoji rather than points to mark the observations in the plot. There are several packages that you could use to do this. Here is a link to the [emoGG documentation](https://github.com/dill/emoGG), which is one package to do this with.^[Also check out the [emo package](https://github.com/hadley/emo) to display emoji in the R Console or in your R Markdown document.] 
 
 <br />
 

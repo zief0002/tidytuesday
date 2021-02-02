@@ -17,9 +17,13 @@ knitr::opts_chunk$set(echo = FALSE)
 Here are some Tidy Tuesday activities.
 
 
-## February 01, 2021
+## February 01, 08, and 15, 2021
 
-- [Activity (HTML)](worksheets/tidy-tuesday-2021-02-01.html)
+You will get a chance to re-create features from the bubble plot featured on Gapminder.org. You can also try adding emoji to a plot, using the `{ggtext} package to make fancy titles and text, and try creating an animated plot!
+
+- [Activity (HTML)](worksheets/tidy-tuesday-2021-02-01.html) [Updated 2021-02-02 to include links to the emoGG package]
 - [RMD File](worksheets/tidy-tuesday-2021-02-01.Rmd)
+
+The meeting on February 08 will be a working meeting where you can collaborate with others to on these problems. On February 15, you can share the plots you made with others as we celebrate your effort! 
 
 

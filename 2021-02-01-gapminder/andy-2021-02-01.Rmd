@@ -1,0 +1,214 @@
+---
+title: "Tidy Tuesday"
+subtitle: "February 1, 2021"
+author: "Andrew Zieffler"
+date: "Written on 01/28/2021"
+output: markdowntemplates::default
+css: "style/tidy-tuesday.css"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+For this Tidy Tuesday we will try to recreate the Life Expectancy versus Income bubble plot featured at [Gapminder.org](https://www.gapminder.org/tools/). To orient you to the data, visit the site and check out the attributes that are being displayed in the plot. Perhaps read the "data doubts" to understand some of the complications associated with measuring these attributes. Hit the "play" button and watch how the relationship between Life Expectancy versus Income changes over time.
+
+
+The data we will use for the actual Tidy Tuesday activity are a dataset that is internal to the `{gapminder}` package. This dataset includes a subset of the actual Gapminder data. For example, it only includes certain measures and only those measurements from 1952 to 2007.^[More complete data can be download from [Gapminder directly](https://www.gapminder.org/data/), although you would need to join several datasets together and also need to transform it to the long format.]
+
+```{r}
+# Load gapminder library
+library(gapminder)
+
+# View data
+head(gapminder)
+```
+
+<br /><br />
+
+# Problems
+
+
+
+:::header
+<img src="figs/jem.png" alt="Jem" />
+
+## Rockstar Level
+:::
+
+<br /><br />
+
+1. Recreate the bubble plot for the year 1982^[Why 1982? Because it was the year E.T. was released.]. Try to mimic this plot as closely as you can, including all the guides on the plot, labels, and the color palette.
+
+```{r q_01, fig.width=9, fig.height=6, out.width='100%', message=FALSE}
+# Load libraries
+library(tidyverse)
+
+# Combine Asia and Oceania
+levels(gapminder$continent) = c("Africa", "Americas", "Asia", "Europe", "Asia")
+
+# Get 1982 data
+gm_1982 = gapminder %>%
+  filter(year == 1982) 
+
+# create bubble plot
+ggplot(data = gm_1982, aes(x = log2(gdpPercap), y = lifeExp)) +
+  annotate("text", x = log2(4000), y = 50, label = "1982", color = "lightgrey", size = 50) +
+  geom_point(pch = 21, aes(fill = continent, size = pop)) +
+  scale_x_continuous(
+    name = "Income (per person GDP/capita, PPP$ inflation-adjusted)",
+    breaks = log2(c(500, 1000, 2000, 4000, 8000, 16000, 32000, 64000)),
+    labels = c("500", "1000", "2000", "4000", "8000", "16k", "32k", "64k"),
+    limits = log2(c(300, 70000))
+  ) +
+  scale_y_continuous(
+    name = "Life expectancy (years)",
+    breaks = seq(from = 20, to = 90, by = 10),
+    limits = c(20, 92)
+  ) +
+  scale_fill_manual(
+    name = "",
+    values = c(
+      rgb(0, 213, 233, maxColorValue = 255), 
+      rgb(127, 235, 0, maxColorValue = 255), 
+      rgb(255, 88, 114, maxColorValue = 255), 
+      rgb(255, 231, 0, maxColorValue = 255)
+      )
+  ) +
+  scale_size(range = c(1, 24)) +
+  theme_light() +
+  theme(
+    panel.grid.minor = element_blank()  
+  ) +
+  annotate("text", x = log2(1200), y = 90.7, label = "INCOME LEVEL 1", color = "lightgrey", size = 2.5, vjust = 0) +
+  annotate("text", x = log2(4700), y = 90.7, label = "LEVEL 2", color = "lightgrey", size = 2.5, vjust = 0) +
+  annotate("text", x = log2(13700), y = 90.7, label = "LEVEL 3", color = "lightgrey", size = 2.5, vjust = 0) +
+  annotate("text", x = log2(42700), y = 90.7, label = "LEVEL 4", color = "lightgrey", size = 2.5, vjust = 0) +
+  annotate("point", x = c(log2(2500), log2(8000), log2(25000)), y = 91.3, pch = 18, color = "lightgrey", size = 2) +
+  guides(size = FALSE)
+```
+
+
+
+<br /><br />
+
+
+:::header
+<img src="figs/ninja.png" alt="Ninja" />
+
+## Ninja Level
+:::
+
+<br /><br />
+
+
+2. Create a scatterplot of the life expectancy versus income for the year 1982. But use emoji rather than points to mark the observations in the plot. There are several packages that you could use to do this. Here is one [example](https://www.hvitfeldt.me/blog/real-emojis-in-ggplot2/).
+
+```{r q_02, fig.width=9, fig.height=6, out.width='100%', message=FALSE}
+# Install emoGG from github
+#remotes::install_github("dill/emoGG")
+
+# Load libraries
+library(emoGG)
+
+# create dog plot
+ggplot(data = gm_1982, aes(x = log2(gdpPercap), y = lifeExp)) +
+  geom_emoji(emoji = "1f436")
+
+# Different emoji for each continent
+africa   = gm_1982 %>% filter(continent == "Africa")
+americas = gm_1982 %>% filter(continent == "Americas")
+asia     = gm_1982 %>% filter(continent == "Asia")
+europe   = gm_1982 %>% filter(continent == "Europe")
+
+ggplot(data = africa, aes(x = log2(gdpPercap), y = lifeExp)) +
+  geom_emoji(emoji = "1f981") + # Plot africa (lion)
+  geom_emoji(data = americas, emoji = "1f98c") + # Plot americas (deer)
+  geom_emoji(data = asia, emoji = "1f428") + # Plot asia (koala)
+  geom_emoji(data = europe, emoji = "1f426") + # Plot europe (bird)
+  theme_light()
+```
+
+<br />
+
+3. Try out some features of the `{ggtext}` package (see [here](https://github.com/wilkelab/ggtext)) to ninja-fy your plot (e.g., add images to the labels, color text in the title). 
+
+```{r q_03, fig.width=9, fig.height=6, out.width='100%', message=FALSE}
+# Load libraries
+library(ggtext)
+
+# create emoji plot
+ggplot(data = africa, aes(x = log2(gdpPercap), y = lifeExp)) +
+  geom_emoji(emoji = "1f981") + # Plot africa (lion)
+  geom_emoji(data = americas, emoji = "1f98c") + # Plot americas (deer)
+  geom_emoji(data = asia, emoji = "1f428") + # Plot asia (koala)
+  geom_emoji(data = europe, emoji = "1f426") + # Plot europe (bird)
+  theme_light() +
+  labs(
+    title = "<b>Fuel economy vs. engine displacement</b><br>
+    <span style = 'font-size:10pt'><img src='https://twemoji.maxcdn.com/v/13.0.1/72x72/1f981.png' width='20' />=Africa; <img src='https://twemoji.maxcdn.com/v/13.0.1/72x72/1f98c.png' width='20' />=Americas; <img src='https://twemoji.maxcdn.com/v/13.0.1/72x72/1f428.png' width='20' />=Asia; <img src='https://twemoji.maxcdn.com/v/13.0.1/72x72/1f426.png' width='20' />=Europe</span>"
+  ) +
+  theme(
+    plot.title = element_markdown()
+    )
+```
+
+
+<br /><br />
+
+
+:::header
+<img src="figs/baby-yoda.png" alt="Ninja" />
+
+## Jedi Level
+:::
+
+<br /><br />
+
+4. Use the `{gganimate}` package (see [here](https://gganimate.com/articles/gganimate.html)) to mimic the animation on Gapminder.com to show how the plot of life expectancy versus income changes over time.
+
+<br /><br />
+
+
+
+```{r q_04, cache=TRUE, warning=FALSE}
+# Load library
+library(gganimate)
+
+# Create plot;
+# Assign to object to follow fig.width, etc.
+p1 = ggplot(data = gapminder, aes(x = log2(gdpPercap), y = lifeExp)) +
+  geom_point(pch = 21, aes(fill = continent, size = pop)) +
+  scale_x_continuous(
+    name = "Income (per person GDP/capita, PPP$ inflation-adjusted)",
+    breaks = log2(c(500, 1000, 2000, 4000, 8000, 16000, 32000, 64000, 128000)),
+    labels = c("500", "1000", "2000", "4000", "8000", "16k", "32k", "64k", "128k"),
+    limits = log2(c(300, 128000))
+  ) +
+  scale_y_continuous(
+    name = "Life expectancy (years)",
+    breaks = seq(from = 20, to = 90, by = 10),
+    limits = c(20, 92)
+  ) +
+  scale_fill_manual(
+    name = "",
+    values = c(
+      rgb(0, 213, 233, maxColorValue = 255), 
+      rgb(127, 235, 0, maxColorValue = 255), 
+      rgb(255, 88, 114, maxColorValue = 255), 
+      rgb(255, 231, 0, maxColorValue = 255)
+      )
+  ) +
+  scale_size(range = c(1, 24)) +
+  theme_light() +
+  theme(panel.grid.minor = element_blank()) +
+  guides(size = FALSE) +
+  transition_time(year) +
+  labs(title = '{frame_time}')
+
+# Display animation
+p1
+```
+
+
+
