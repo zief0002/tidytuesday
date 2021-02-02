@@ -19,7 +19,7 @@ Here are some Tidy Tuesday activities.
 
 ## February 01, 08, and 15, 2021
 
-You will get a chance to re-create features from the bubble plot featured on Gapminder.org. You can also try adding emoji to a plot, using the `{ggtext} package to make fancy titles and text, and try creating an animated plot!
+You will get a chance to re-create features from the bubble plot featured on Gapminder.org. You can also try adding emoji to a plot, using the `{ggtext}` package to make fancy titles and text, and try creating an animated plot!
 
 - [Activity (HTML)](worksheets/tidy-tuesday-2021-02-01.html) [Updated 2021-02-02 to include links to the emoGG package]
 - [RMD File](worksheets/tidy-tuesday-2021-02-01.Rmd)
