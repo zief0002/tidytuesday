@@ -6,15 +6,15 @@
       "description": "Who are We?",
       "author": [],
       "contents": "\nThe ICD Tidy Tuesday group is run and attended by a bunch of really smart graduate students, post-docs, and personnel from the Institute of Child Development at the University of Minnesota (with some help from Andy).\nInspired by the Tidy Tuesday Social Data Project, the goal of this group is to promote members’ computational skills, especially those for working with data. This group is about community, and we learn from each other.\n\n\n\n",
-      "last_modified": "2021-02-02T08:25:03-06:00"
+      "last_modified": "2021-02-26T07:44:26-06:00"
     },
     {
       "path": "index.html",
       "title": "ICD Tidy Tuesday",
       "description": "Some Tidy Tuesday Fun!\n",
       "author": [],
-      "contents": "\nHere are some Tidy Tuesday activities.\nFebruary 01, 08, and 15, 2021\nYou will get a chance to re-create features from the bubble plot featured on Gapminder.org. You can also try adding emoji to a plot, using the `{ggtext} package to make fancy titles and text, and try creating an animated plot!\nActivity (HTML) [Updated 2021-02-02 to include links to the emoGG package]\nRMD File\nThe meeting on February 08 will be a working meeting where you can collaborate with others to on these problems. On February 15, you can share the plots you made with others as we celebrate your effort!\n\n\n\n",
-      "last_modified": "2021-02-02T08:25:03-06:00"
+      "contents": "\nHere are some Tidy Tuesday activities.\nFebruary 01, 08, and 15, 2021\nYou will get a chance to re-create features from the bubble plot featured on Gapminder.org. You can also try adding emoji to a plot, using the {ggtext} package to make fancy titles and text, and try creating an animated plot!\nActivity (HTML) [Updated 2021-02-02 to include links to the emoGG package]\nRMD File\nThe meeting on February 08 will be a working meeting where you can collaborate with others to on these problems. On February 15, you can share the plots you made with others as we celebrate your effort!\n\nMarch, 2021\nThis month you will get a chance to re-create some of the charts, graphs, and maps presented at the 1900 Paris Exposition by sociologist and Black rights activist W. E. B. Du Bois.\nActivity (HTML)\nRMD File\nEach meeting in March will be a working meeting where you can work on re-creating these spelndid data portraits, collaborate with others, and workshop your ideas and plots.\n\n\n\n",
+      "last_modified": "2021-02-26T07:44:25-06:00"
     }
   ],
   "collections": []

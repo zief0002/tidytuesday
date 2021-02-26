@@ -26,4 +26,18 @@ You will get a chance to re-create features from the bubble plot featured on Gap
 
 The meeting on February 08 will be a working meeting where you can collaborate with others to on these problems. On February 15, you can share the plots you made with others as we celebrate your effort! 
 
+<br />
+
+
+## March, 2021
+
+This month you will get a chance to re-create some of the charts, graphs, and maps presented at the 1900 Paris Exposition by sociologist and Black rights activist W. E. B. Du Bois.
+
+- [Activity (HTML)](worksheets/tidy-tuesday-2021-03-01.html)
+- [RMD File](worksheets/tidy-tuesday-2021-03-01.Rmd)
+
+Each meeting in March will be a working meeting where you can work on re-creating these spelndid data portraits, collaborate with others, and workshop your ideas and plots. 
+
+
+
 

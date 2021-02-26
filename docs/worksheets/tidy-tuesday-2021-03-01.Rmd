@@ -1,0 +1,59 @@
+---
+title: "Tidy Tuesday"
+subtitle: "March 1, 2021"
+author: "Andrew Zieffler"
+date: "Written on 02/26/2021"
+output: markdowntemplates::default
+css: "style/tidy-tuesday.css"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+For this Tidy Tuesday we will try to recreate some of the visualizations from W.E.B. Du Bois' work *Data Portraits: Visualizing Black America*. 
+
+The data we will use are available on the official [Tidy Tuesday website](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-02-16/readme.md). You can also read a little about W.E.B. Du Bois and the Data Portraits project there as well. (There are several links to informative articles about Du Bois and his use of data to fight racism.) You could also read Anthony Stark's [blog post](https://medium.com/nightingale/recreating-w-e-b-du-boiss-data-portraits-87dd36096f34) on re-creating these portraits using the tool decksh. (Stark actually provided the data to Tidy Tuesday.)
+
+It will be fun to try and re-create these incredible visualizations using R! You can import these data using the `read_csv()` function from the `{tidyverse}` package. 
+
+```{r eval=FALSE}
+# Load library
+library(tidyverse)
+
+# Import the eight datasets
+georgia_pop <- read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-16/georgia_pop.csv')
+census <- read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-16/census.csv')
+furniture <- read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-16/furniture.csv')
+city_rural <- read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-16/city_rural.csv')
+income <- read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-16/income.csv')
+freed_slaves <- read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-16/freed_slaves.csv')
+occupation <- read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-16/occupation.csv')
+conjugal <- read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-16/conjugal.csv')
+```
+
+You will get a parsing failure on the income data, but it should have read in ok.
+
+The data dictionaries (codebooks) for each of these are available on the [Tidy Tuesday site](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-02-16/readme.md). As noted on this site, "Please note that I am leaving the data as it was found/presented in 1900, and specifically the use of the offensive term "colored" for Black/African-American."
+
+<br /><br />
+
+
+# Problems
+
+
+:::header
+<img src="figs/baby-yoda.png" alt="Ninja" />
+
+## Jedi Level^[We are all Jedis this month. Why Jedis and not Rockstars or Ninjas? Because Baby Yoda (I can't use Grogu) is cute and funny, as well as, the best part of *The Mandolorian*. And because Trevor complained about Baby Yoda.]
+:::
+
+<br /><br />
+
+1. Re-create one or more of Du Bois' data portraits.
+
+<br /><br />
+
+
+
+
