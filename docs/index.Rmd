@@ -1,8 +1,10 @@
 ---
 title: "ICD Tidy Tuesday"
-description: |
-  Some Tidy Tuesday Fun!
-site: distill::distill_website
+author: "Some Tidy Tuesday Fun!"
+output:
+  prettydoc::html_pretty:
+    theme: hpstr
+    toc: true
 ---
 
 ```{r setup, include=FALSE}
@@ -14,8 +16,11 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
+# Tidy Tuesday Activities
+
 Here are some Tidy Tuesday activities.
 
+<br />
 
 ## February 01, 08, and 15, 2021
 
@@ -38,6 +43,13 @@ This month you will get a chance to re-create some of the charts, graphs, and ma
 
 Each meeting in March will be a working meeting where you can work on re-creating these spelndid data portraits, collaborate with others, and workshop your ideas and plots. 
 
+<br />
+
+# About Us
+
+The ICD Tidy Tuesday group is run and attended by a bunch of really smart graduate students, post-docs, and personnel from the [Institute of Child Development](https://icd.umn.edu/) at the University of Minnesota (with some help from Andy).
+
+Inspired by the [Tidy Tuesday Social Data Project](https://thomasmock.netlify.app/post/tidytuesday-a-weekly-social-data-project-in-r/), the goal of this group is to promote members' computational skills, especially those for working with data. This group is about community, and we learn from each other. 
 
 
 
