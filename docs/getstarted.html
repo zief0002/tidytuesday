@@ -87,26 +87,32 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>CEHD Tidy Tuesday: CEHD Tidy Tuesday Meetup</title>
+  <title>CEHD Tidy Tuesday: Getting Started at Tidy Tuesday</title>
+
+  <meta property="description" itemprop="description" content="A quick start guide to getting into the spirit of Tidy Tuesday"/>
 
 
-
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2022-01-20"/>
+  <meta property="article:created" itemprop="dateCreated" content="2022-01-20"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="CEHD Tidy Tuesday: CEHD Tidy Tuesday Meetup"/>
+  <meta property="og:title" content="CEHD Tidy Tuesday: Getting Started at Tidy Tuesday"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="A quick start guide to getting into the spirit of Tidy Tuesday"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="CEHD Tidy Tuesday"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="CEHD Tidy Tuesday: CEHD Tidy Tuesday Meetup"/>
+  <meta property="twitter:title" content="CEHD Tidy Tuesday: Getting Started at Tidy Tuesday"/>
+  <meta property="twitter:description" content="A quick start guide to getting into the spirit of Tidy Tuesday"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","image","site"]}},"value":[{"type":"character","attributes":{},"value":["CEHD Tidy Tuesday Meetup"]},{"type":"character","attributes":{},"value":["goldy2.png"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Getting Started at Tidy Tuesday"]},{"type":"character","attributes":{},"value":["A quick start guide to getting into the spirit of Tidy Tuesday\n"]},{"type":"character","attributes":{},"value":["2022-01-20"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2365,7 +2371,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"CEHD Tidy Tuesday Meetup","authors":[]}
+{"title":"Getting Started at Tidy Tuesday","description":"A quick start guide to getting into the spirit of Tidy Tuesday","authors":[],"publishedDate":"2022-01-20T00:00:00.000-06:00"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2390,19 +2396,79 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>CEHD Tidy Tuesday Meetup</h1>
+<h1>Getting Started at Tidy Tuesday</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-
+<p><p>A quick start guide to getting into the spirit of Tidy Tuesday</p></p>
 </div>
 
 
 <div class="d-article">
-<p><img src="goldy2.png" style="align-left:auto; align-right:auto; "/></p>
-<p><br /></p>
-<p>Welcome to the CEHD Tidy Tuesday graduate student meetup page! Inspired by the <a href="https://thomasmock.netlify.app/post/tidytuesday-a-weekly-social-data-project-in-r/">Tidy Tuesday Social Data Project</a>, the goal of this meetup is to promote participants’ computational skills, especially those for working with data. At the meetup, we work with data from the Tidy Tuesday project to practice and improve our techniques for visualizing and working with raw data, while leveraging the community aspect of the group to learn from each other.</p>
-<p><br /></p>
-<p>Join us Spring 2022 every Tuesday from 4:00 PM –5:30 in <a href="https://campusmaps.umn.edu/robert-h-bruininks-hall">Bruininks Hall (Room 123)</a>!</p>
+<p>Each Monday the Tidy Tuesday Social Data Project releases a dataset which is available in the <a href="https://github.com/rfordatascience/tidytuesday">R4Data Science Tidy Tuesday GitHUb repository</a>. (You can also access older data sets here if you aren’t interested in the current one.)</p>
+<p>Click the link for the data you want to work with. This will open a page which will give you information about the dataset(s) related to the topic (e.g., source, background), access to a data dictionary, and the R syntax for importing the data. (Note there is often a cleaning script provided that was used to take the messy raw data and clean it. The data you import from the site is already cleaned using this script, but it is sometimes interesting to see how the data were cleaned.)</p>
+<h2 id="what-do-i-do-now-that-i-imported-the-data">What Do I Do Now that I Imported the Data?</h2>
+<p>The answer to this question is: it is up to you. The stated goal of the Tidy Tuesday Social Data Project is:</p>
+<blockquote>
+<p>“…to provide a safe and supportive forum for individuals to practice their wrangling and data visualization skills independent of drawing conclusions.”</p>
+</blockquote>
+<p>You could create a visualization of the data. Maybe you always wanted to try making a waffle plot. Or perhaps you want to see how to make an interactive plot using the <code>{plotly}</code> package. Maybe you’ve always wanted to learn how to make a map but just haven’t taken the time. Or you want to see how to animate a series of plots. Your options are limitless!</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-1"></span>
+<img src="https://pbs.twimg.com/media/FI5sCjUacAMSL6Q?format=jpg&name=4096x4096" alt="Hexbin map created by Twitter user [@danoehm](https://twitter.com/danoehm) for the January 11, 2022 Bee Colony Losses data." width="60%" />
+<p class="caption">
+Figure 1: Hexbin map created by Twitter user <a href="https://twitter.com/danoehm"><span class="citation" data-cites="danoehm">@danoehm</span></a> for the January 11, 2022 Bee Colony Losses data.
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-2"></span>
+<img src="https://pbs.twimg.com/media/FI3W1xlWYAUkdIW?format=jpg&name=4096x4096" alt="Bar chart created by Twitter user [@ryanahart](https://twitter.com/ryanahart) for the January 11, 2022 Bee Colony Losses data." width="60%" />
+<p class="caption">
+Figure 2: Bar chart created by Twitter user <a href="https://twitter.com/ryanahart"><span class="citation" data-cites="ryanahart">@ryanahart</span></a> for the January 11, 2022 Bee Colony Losses data.
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-3"></span>
+<img src="https://pbs.twimg.com/media/FI210OOXsAAX1M5?format=jpg&name=large" alt="Jittered time plot created by Twitter user [@efranke7282](https://twitter.com/efranke7282)  for the January 11, 2022 Bee Colony Losses data." width="60%" />
+<p class="caption">
+Figure 3: Jittered time plot created by Twitter user <a href="https://twitter.com/efranke7282"><span class="citation" data-cites="efranke7282">@efranke7282</span></a> for the January 11, 2022 Bee Colony Losses data.
+</p>
+</div>
+</div>
+<p>There is no requirement that you have to do anything fancy either. Maybe you want to practice making histograms or density plots. Or just learn how to change the font used in your plots. Add titles, subtitles, footnotes. Create your own theme or color palette.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-4"></span>
+<img src="https://pbs.twimg.com/media/E7tCIm2XEAYklQX?format=jpg&name=4096x4096" alt="Twitter user [@Andy_A_Baker](https://twitter.com/Andy_A_Baker) rocked a pink background and colored text in the title in creating this scatterplot for the July 27, 2021 Olympic Medals data." width="60%" />
+<p class="caption">
+Figure 4: Twitter user <a href="https://twitter.com/Andy_A_Baker"><span class="citation" data-cites="Andy_A_Baker">@Andy_A_Baker</span></a> rocked a pink background and colored text in the title in creating this scatterplot for the July 27, 2021 Olympic Medals data.
+</p>
+</div>
+</div>
+<p>You don’t even have to create a visualization. You can practice your data wrangling; filtering, grouping, and the like. You could learn how to produce tables for your reports. Or try an alternative method than you usually use (kable? pander? gt table?) How about learning how to embed plots in a table?</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-5"></span>
+<img src="https://pbs.twimg.com/media/FJYE7UAWQAIkBDu?format=jpg&name=large" alt="Summary table created by Twitter user [@leeolney3](https://twitter.com/leeolney3) for the January 18, 2022 Chocolate Bar Ratings data." width="60%" />
+<p class="caption">
+Figure 5: Summary table created by Twitter user <a href="https://twitter.com/leeolney3"><span class="citation" data-cites="leeolney3">@leeolney3</span></a> for the January 18, 2022 Chocolate Bar Ratings data.
+</p>
+</div>
+</div>
+<p>You can also get inspiration from the larger Tidy Tuesday community. Many people post their product (and code) to Twitter (search <code>#TidyTuesday</code> or <code>#RStats</code>).</p>
+<h2 id="sharing-my-work">Sharing My Work</h2>
+<p>Sharing your work not gives you the chance to say to others…“Hey! Check out what I did!”, but it also gives you a chance to document your own growth and learning over time. It can also serve as an inspiration to others and promotes a culture of sharing and encouragement.</p>
+<ul>
+<li>Share your work with our community at the end of the meetup.</li>
+</ul>
+<p>Even if you think it isn’t very good, sharing helps encourage others. It is awesome for others to see what you created. We learn and grow from seeing other people’s products.</p>
+<ul>
+<li>Post your viz or table or whatever you create to Twitter.</li>
+</ul>
+<p>Use the hashtag <code>#TidyTuesday</code>. Also, try to include a link to the code used to create your visualization when you post to Twitter. Comment your code wherever possible to help yourself and others understand your process! Also, give credit to the original data source whenever possible. Finally, don’t forget to add <a href="https://medium.com/nightingale/writing-alt-text-for-data-visualization-2a218ef43f81">alt text (alternative text)</a> to all of your posted graphics to make them more friendly for people who are visually impaired. Guidelines for how to add alt text to your images on Twitter are <a href="https://help.twitter.com/en/using-twitter/picture-descriptions">here</a>.</p>
+<ul>
+<li>Showcase your work on your personal website.</li>
+</ul>
+<p>You could also write up a post explaining your thought process or how you did something in R.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

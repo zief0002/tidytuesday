@@ -1,0 +1,19 @@
+---
+title: "Resources"
+description: |
+  Some links to resources, packages, and other fun stuff
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Official Tidy Tuesday Links
+
+- [GitHub Repo of Data](https://github.com/rfordatascience/tidytuesday)
+- [Weekly Podcast](https://www.tidytuesday.com/)
+
+
+
+
+

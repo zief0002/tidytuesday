@@ -1,0 +1,13 @@
+---
+title: "About Our Meetup"
+description: |
+  A short history of the CEHD Tidy Tuesday meetup
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+The CEHD Tidy Tuesday meetup was the brainchild of several graduate students, post-docs, and personnel from the [Institute of Child Development](https://icd.umn.edu/) at the University of Minnesota. With a little support and encouragement from Andy, this group starting meeting regularly during the 2020--21 academic year. (Fun Fact: We met Thursdays, so I guess it was more of a Tidy Thursday!) We decided to expand the community to all of the CEHD graduate students in Spring of 2022.
+
+

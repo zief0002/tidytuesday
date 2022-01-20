@@ -1,0 +1,37 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About Our Meetup",
+      "description": "A short history of the CEHD Tidy Tuesday meetup",
+      "author": [],
+      "contents": "\nThe CEHD Tidy Tuesday meetup was the brainchild of several graduate students, post-docs, and personnel from the Institute of Child Development at the University of Minnesota. With a little support and encouragement from Andy, this group starting meeting regularly during the 2020–21 academic year. (Fun Fact: We met Thursdays, so I guess it was more of a Tidy Thursday!) We decided to expand the community to all of the CEHD graduate students in Spring of 2022.\n\n\n\n",
+      "last_modified": "2022-01-20T13:55:20-06:00"
+    },
+    {
+      "path": "getstarted.html",
+      "title": "Getting Started at Tidy Tuesday",
+      "description": "A quick start guide to getting into the spirit of Tidy Tuesday\n",
+      "author": [],
+      "date": "`r Sys.Date()`",
+      "contents": "\nEach Monday the Tidy Tuesday Social Data Project releases a dataset which is available in the R4Data Science Tidy Tuesday GitHUb repository. (You can also access older data sets here if you aren’t interested in the current one.)\nClick the link for the data you want to work with. This will open a page which will give you information about the dataset(s) related to the topic (e.g., source, background), access to a data dictionary, and the R syntax for importing the data. (Note there is often a cleaning script provided that was used to take the messy raw data and clean it. The data you import from the site is already cleaned using this script, but it is sometimes interesting to see how the data were cleaned.)\nWhat Do I Do Now that I Imported the Data?\nThe answer to this question is: it is up to you. The stated goal of the Tidy Tuesday Social Data Project is:\n\n“…to provide a safe and supportive forum for individuals to practice their wrangling and data visualization skills independent of drawing conclusions.”\n\nYou could create a visualization of the data. Maybe you always wanted to try making a waffle plot. Or perhaps you want to see how to make an interactive plot using the {plotly} package. Maybe you’ve always wanted to learn how to make a map but just haven’t taken the time. Or you want to see how to animate a series of plots. Your options are limitless!\n\n\n\nFigure 1: Hexbin map created by Twitter user @danoehm for the January 11, 2022 Bee Colony Losses data.\n\n\n\n\n\n\nFigure 2: Bar chart created by Twitter user @ryanahart for the January 11, 2022 Bee Colony Losses data.\n\n\n\n\n\n\nFigure 3: Jittered time plot created by Twitter user @efranke7282 for the January 11, 2022 Bee Colony Losses data.\n\n\n\nThere is no requirement that you have to do anything fancy either. Maybe you want to practice making histograms or density plots. Or just learn how to change the font used in your plots. Add titles, subtitles, footnotes. Create your own theme or color palette.\n\n\n\nFigure 4: Twitter user @Andy_A_Baker rocked a pink background and colored text in the title in creating this scatterplot for the July 27, 2021 Olympic Medals data.\n\n\n\nYou don’t even have to create a visualization. You can practice your data wrangling; filtering, grouping, and the like. You could learn how to produce tables for your reports. Or try an alternative method than you usually use (kable? pander? gt table?) How about learning how to embed plots in a table?\n\n\n\nFigure 5: Summary table created by Twitter user @leeolney3 for the January 18, 2022 Chocolate Bar Ratings data.\n\n\n\nYou can also get inspiration from the larger Tidy Tuesday community. Many people post their product (and code) to Twitter (search #TidyTuesday or #RStats).\nSharing My Work\nSharing your work not gives you the chance to say to others…“Hey! Check out what I did!”, but it also gives you a chance to document your own growth and learning over time. It can also serve as an inspiration to others and promotes a culture of sharing and encouragement.\nShare your work with our community at the end of the meetup.\nEven if you think it isn’t very good, sharing helps encourage others. It is awesome for others to see what you created. We learn and grow from seeing other people’s products.\nPost your viz or table or whatever you create to Twitter.\nUse the hashtag #TidyTuesday. Also, try to include a link to the code used to create your visualization when you post to Twitter. Comment your code wherever possible to help yourself and others understand your process! Also, give credit to the original data source whenever possible. Finally, don’t forget to add alt text (alternative text) to all of your posted graphics to make them more friendly for people who are visually impaired. Guidelines for how to add alt text to your images on Twitter are here.\nShowcase your work on your personal website.\nYou could also write up a post explaining your thought process or how you did something in R.\n\n\n\n",
+      "last_modified": "2022-01-20T13:55:23-06:00"
+    },
+    {
+      "path": "index.html",
+      "title": "CEHD Tidy Tuesday Meetup",
+      "author": [],
+      "contents": "\n\n\nWelcome to the CEHD Tidy Tuesday graduate student meetup page! Inspired by the Tidy Tuesday Social Data Project, the goal of this meetup is to promote participants’ computational skills, especially those for working with data. At the meetup, we work with data from the Tidy Tuesday project to practice and improve our techniques for visualizing and working with raw data, while leveraging the community aspect of the group to learn from each other.\n\nJoin us Spring 2022 every Tuesday from 4:00 PM –5:30 in Bruininks Hall (Room 123)!\n\n\n\n",
+      "last_modified": "2022-01-20T13:55:25-06:00"
+    },
+    {
+      "path": "resources.html",
+      "title": "Resources",
+      "description": "Some links to resources, packages, and other fun stuff",
+      "author": [],
+      "contents": "\nOfficial Tidy Tuesday Links\nGitHub Repo of Data\nWeekly Podcast\n\n\n\n",
+      "last_modified": "2022-01-20T13:55:26-06:00"
+    }
+  ],
+  "collections": []
+}
