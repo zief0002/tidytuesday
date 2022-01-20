@@ -1,0 +1,15 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+
+
+# Ignore the following folders
+/admin
+
+# Ignore keynote files
+*.key
+
+# Ignore pages files
+*.pages
