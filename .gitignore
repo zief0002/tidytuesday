@@ -2,3 +2,13 @@
 .Rhistory
 .RData
 .Ruserdata
+
+
+# Ignore the following folders
+/admin
+
+# Ignore keynote files
+*.key
+
+# Ignore pages files
+*.pages
