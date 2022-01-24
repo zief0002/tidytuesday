@@ -14,6 +14,46 @@ knitr::opts_chunk$set(echo = FALSE)
 - [Weekly Podcast](https://www.tidytuesday.com/)
 
 
+# ggplot Functionality
+
+
+### Text 
+
+- [geomtextpath: Create curved text in ggplot2](https://github.com/AllanCameron/geomtextpath)
+- [ggtext: Add color, different fonts, etc to your ggplot axes and titles](https://wilkelab.org/ggtext/index.html)
+
+
+### Pictures
+
+- [emoGG: Add emogi to your ggplot](https://github.com/dill/emoGG)
+- [ggbernie: Add Bernie Sanders to your ggplot](https://github.com/R-CoderDotCom/ggbernie)
+- [ggandy: Add Andy to your ggplot](https://github.com/sallystoyell/ggandy)
+
+
+### Other
+
+- [ggside: Create marginal distribution side plots](https://www.business-science.io/code-tools/2021/05/18/marginal_distributions.html)
+
+
+# Tables
+
+- [gtsummary: Elegant and flexible way to create publication-ready analytical and summary tables](https://www.danieldsjoberg.com/gtsummary/)
+
+# R Markdown
+
+- [bookdown: Write books using R Markdown](https://bookdown.org/)
+- [gopherdown: Use R Markdown to write a UMN formatted thesis](https://github.com/zief0002/gopherdown)
+- [distill: Create a blog/website using R Markdown](https://rstudio.github.io/distill/)
+- [blogdown: Hugo-based blog using R Markdown](https://bookdown.org/yihui/blogdown/)
+- [Alison Hill's YouTube videos for creating a website using R Markdown](https://www.youtube.com/channel/UCQYM-t2ut2zXr4d7TIFya1A?app=desktop)
 
 
 
+
+# GitHub
+
+- [Happy Git with R](https://happygitwithr.com/)
+
+# Fun with R
+
+- [OregonTrail: PLay Oregon Trail in your R Console](https://github.com/tslumley/OregonTrail)
