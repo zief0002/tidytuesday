@@ -29,8 +29,8 @@
       "title": "Resources",
       "description": "Some links to resources, packages, and other fun stuff",
       "author": [],
-      "contents": "\nOfficial Tidy Tuesday Links\nGitHub Repo of Data\nWeekly Podcast\nggplot Functionality\nText\ngeomtextpath: Create curved text in ggplot2\nggtext: Add color, different fonts, etc to your ggplot axes and titles\nPictures\nemoGG: Add emogi to your ggplot\nggbernie: Add Bernie Sanders to your ggplot\nggandy: Add Andy to your ggplot\nOther\nggside: Create marginal distribution side plots\nTables\ngtsummary: Elegant and flexible way to create publication-ready analytical and summary tables\nR Markdown\nbookdown: Write books using R Markdown\ngopherdown: Use R Markdown to write a UMN formatted thesis\ndistill: Create a blog/website using R Markdown\nblogdown: Hugo-based blog using R Markdown\nAlison Hill’s YouTube videos for creating a website using R Markdown\nGitHub\nHappy Git with R\nFun with R\nOregonTrail: PLay Oregon Trail in your R Console\n\n\n\n",
-      "last_modified": "2022-01-24T10:29:11-06:00"
+      "contents": "\nOfficial Tidy Tuesday Links\nGitHub Repo of Data\nWeekly Podcast\nggplot Functionality\nText\ngeomtextpath: Create curved text in ggplot2\nggtext: Add color, different fonts, etc to your ggplot axes and titles\nPictures\nemoGG: Add emogi to your ggplot\nggbernie: Add Bernie Sanders to your ggplot\nggandy: Add Andy to your ggplot\nOther\nggside: Create marginal distribution side plots\nTables\ngt\ngt Documentation\nYouTube tutorial\n\ngtsummary: Elegant and flexible way to create publication-ready analytical and summary tables\nR Markdown\nbookdown: Write books using R Markdown\ngopherdown: Use R Markdown to write a UMN formatted thesis\ndistill: Create a blog/website using R Markdown\nblogdown: Hugo-based blog using R Markdown\nAlison Hill’s YouTube videos for creating a website using R Markdown\nGitHub\nHappy Git with R\nFun with R\nOregonTrail: PLay Oregon Trail in your R Console\n\n\n\n",
+      "last_modified": "2022-02-07T13:42:54-06:00"
     }
   ],
   "collections": []

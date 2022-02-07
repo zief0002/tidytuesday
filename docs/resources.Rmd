@@ -37,7 +37,12 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Tables
 
+- gt
+  + [gt Documentation](https://gt.rstudio.com/)
+  + [YouTube tutorial](https://www.youtube.com/watch?v=z0UGmMOxl-c)
+
 - [gtsummary: Elegant and flexible way to create publication-ready analytical and summary tables](https://www.danieldsjoberg.com/gtsummary/)
+
 
 # R Markdown
 
